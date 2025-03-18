@@ -160,7 +160,7 @@ header.scrolled a:hover{
     color: var(--orange);
 }
 .flex{
-    background: rgb(243, 179, 18);
+    background:#f5f5f5;
     max-width: 1500px;
     display: flex;
     justify-content: space-between;
@@ -178,7 +178,7 @@ header.scrolled a:hover{
 }
 .navbar a:hover, header .icons i:hover{
     background: cyan;
-    color: rgb(209, 34, 34);
+    color: #f5f5f5;
     text-decoration: none;
 }
 .header .icons{
@@ -223,7 +223,7 @@ header.scrolled a:hover{
 .container-fluid{
     position: relative;
     margin: 0;
-    background: orange;
+    background: #fff;
     padding: 0;
     width: 100%;
     height: 100%;
@@ -259,7 +259,7 @@ header.scrolled a:hover{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #f7b90f;
+    background: #fff;
     box-shadow: var(--box-shadow);
     z-index: 2;
     cursor: pointer;
@@ -311,13 +311,12 @@ header.scrolled a:hover{
     color: #555;
     margin-bottom: .3rem;
 }
+
 .story{
-    padding: 8% 6%;
-    background-color: #f5f5f5;
-    background-image: url();
-    background-repeat: no-repeat;
-    position: absolute;
+    padding: 0;
+    background-color: #fff;
 }
+
 .story::before{
     content: '';
     background: url();
@@ -330,11 +329,12 @@ header.scrolled a:hover{
     z-index: 1;
 }
 .story .row{
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1rem));
+    grid-template-columns: repeat(auto-fit, minmax(42rem, 1rem));
 }
 .story .row .box{
-    display: grid;
+    margin-left: 2rem;
 }
+
 .story .row .box span{
     font-size: 45px;
     color: black;
@@ -349,11 +349,70 @@ header.scrolled a:hover{
     font-size: 18px;
 }
 .story .row .box btn{
-    background: orange;
+    background: #fff;
     color: black;
 }
 .story .row .box img{
     width: 100%;
+    height: 100%;
+    margin-right: 0;
+}
+
+/*------------homeshop------------*/
+.popular-brands{
+    position: relative;
+    padding: 4%;
+}
+.popular-brands h2{
+    margin-bottom: 2rem;
+}
+.popular-brands-content{
+    display: flex;
+}
+.popular-brands-content .cart{
+    width: 100px;
+    margin: 1rem;
+}
+.popular-brands-content img{
+    width: 100%;
+    height: 250px;
+    transition: 2s;
+}
+.popular-brands .controls{
+    position: absolute;
+    right: 5%;
+    top: 8%;
+}
+.left,
+.right{
+    border: 1px solid black;
+    color: gray;
+    padding: .5rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.right:hover,
+.left:hover{
+    border: 1px solid var(--orange);
+    color: gold;
+}
+.box-container{
+    padding: 2% 8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    column-gap: 1rem;
+}
+.box-container .box,
+.popular-brands-content .box{
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 2;
+    text-transform: uppercase;
+    position: relative;
 }
 
 
@@ -362,7 +421,7 @@ header.scrolled a:hover{
 
 /*------------footer------------*/
 footer{
-    background: orange;
+    background: #fff;
     width: 100%;
     margin-top: -3.5rem;
     position: relative;
@@ -400,7 +459,7 @@ footer .inner-footer .cart h3::after{
     content: '';
     width: 20%;
     height: 6px;
-    background-color: #c4a5a5;
+    background-color: #fff;
     right: 10%;
     bottom: 0;
 } 

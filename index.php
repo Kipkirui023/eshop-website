@@ -24,6 +24,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------------------------bootstrap icon links---------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!------------------------slick slider link---------------------------------->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
     <title>Home Page</title>
@@ -35,7 +37,7 @@
     <div class="container-fluid">
         <div class="hero-slider">
             <div class="slider-item">
-                <img src="images/hom1.jpg" alt="">
+                <img src="images/ho1.jpg" alt="">
                 <div class="slider-caption">
                     <span>The Best Qulity Products</span>
                     <p>Enjoy purchase of your best Electronic devices from us<br>
@@ -46,7 +48,7 @@
                 </div>
             </div>
             <div class="slider-item">
-                <img src="images/hp1.jpg" alt="">
+                <img src="images/p1.jpg" alt="">
                 <div class="slider-caption">
                     <span>The Best Qulity Products</span>
                     <p>Enjoy purchase of your best Electronic devices from us<br>
@@ -58,8 +60,8 @@
             </div>
         </div>
         <div class="controls">
-            <i class="bi bi-chevron-left pre"></i>
-            <i class="bi bi-chevron-left pre"></i>
+            <i class="bi bi-chevron-left prev"></i>
+            <i class="bi bi-chevron-left next"></i>
         </div>
     </div>
     <div class="services">
@@ -107,12 +109,13 @@
             </div>
         </div>
     </div>
-
-    <!------------?php include 'footer.php';?>---------->
+   
+    <?php include 'homeshop.php';?>
+    <?php include 'footer.php';?>
 
     <!------------------------slick slider link---------------------------------->
-    <script src="https://code.jquery.com/jquery-3.2.1.slin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="jquery.js"></script>
+    <script src="slick.js"></script>
     <script type="text/javascript" src="script2.js"></script>
     
 </body>
