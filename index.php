@@ -61,7 +61,7 @@
         </div>
         <div class="controls">
             <i class="bi bi-chevron-left prev"></i>
-            <i class="bi bi-chevron-left next"></i>
+            <i class="bi bi-chevron-right next"></i>
         </div>
     </div>
     <div class="services">
@@ -116,7 +116,10 @@
     <!------------------------slick slider link---------------------------------->
     <script src="jquery.js"></script>
     <script src="slick.js"></script>
-    <script type="text/javascript" src="script2.js"></script>
+
+    <script type="text/javascript">
+        <?php include 'script2.js' ?>
+    </script>
     
 </body>
 </html>

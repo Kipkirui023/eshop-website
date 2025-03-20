@@ -6,6 +6,13 @@ $('.hero-slider').click({
     nextArrow: $('.next'),
     prevArrow: $('.prev')
 })
+$('.testimonials-slider').click({
+    autoplay: true,
+    isFinite: false,
+    speed:300,
+    nextArrow: $('.next1'),
+    prevArrow: $('.prev1')
+})
 
 
 const header = document.querySelector('header');

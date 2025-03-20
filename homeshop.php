@@ -6,7 +6,11 @@
     <!------------------------bootstrap icon links---------------------------------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!------------------------slick slider link---------------------------------->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+    <!------------------------slick slider link---------------------------------->
+    <link rel="stylesheet" type="text/css" href="slick.css">
+
+    <!------------------------default css link---------------------------------->
+    <link rel="stylesheet" href="main.css">
 
     <title>Landing Page</title>
 </head>
@@ -15,16 +19,16 @@
         <h2>POPULAR BRANDS</h2>
         <div class="controls">
             <i class="bi bi-chevron-left left"></i>
-            <i class="bi bi-chevron-left right"></i>
+            <i class="bi bi-chevron-right right"></i>
         </div>
         <div class="popular-brands-content">
             <?php
             $select_products = mysqli_query($conn, "SELECT * FROM `products`") or die('Query Fails');
-            if (mysqli_query($select_products)>0){
+            if (mysqli_num_rows($select_products)>0){
                 while($fetch_products = mysqli_fetch_assoc($select_products)){
             ?>
             <form method="post" class="cart">
-                <img src="image/<php echo $fetch_products['image']; ?>">
+                <img src="image/<?php echo $fetch_products['image']; ?>">
                 <div class="price"><?php echo $fetch_products['price']; ?></div>
                 <div class="name"><?php echo $fetch_products['name']; ?></div>
                 <input type="hidden" name="product_id" value="<?php echo $fetch_products['id']; ?>">
@@ -48,5 +52,45 @@
             ?>
         </div>
     </section>
+    <script src="jquery.js"></script>
+    <script src="slick.js"></script>
+
+    <script type="text/javascript">
+        $('.popular-brands-content').slick({
+            lazyLoad: 'ondemand',
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            nextArrow: $('.left'),
+            prevArrow: $('.right')
+            responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+    </script>
 </body>
 </html>
