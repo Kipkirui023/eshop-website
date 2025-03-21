@@ -85,7 +85,7 @@
                                 <option value="complete">Complete</option>
                             </select>
                             <input type="submit" name="update_order" value="update_payment" class="btn">
-                            <a href="admin_order.php?delete=<?php echo $fetch_orders['id']; ?>;" onclick="return confirm('Delete This Message');">Delete!</a>
+                            <a href="admin_order.php?delete=<?php echo $fetch_orders['id']; ?>;"class="delete" onclick="return confirm('Delete This Message');">Delete!</a>
                         </form>
 
                     </div> 

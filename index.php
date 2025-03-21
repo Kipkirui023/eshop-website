@@ -37,7 +37,7 @@
     <div class="container-fluid">
         <div class="hero-slider">
             <div class="slider-item">
-                <img src="images/collectin.jpg" alt="">
+                
                 <div class="slider-caption">
                     <span>The Best Qulity Products</span>
                     <p>Enjoy purchase of your best Electronic devices from us<br>
@@ -45,6 +45,9 @@
                      We are here because of you.
                     </p>
                     <a href="shop.php" class="btn">Shop Now</a>
+                </div>
+                <div class="slider-item">
+                <img src="images/collectin.jpg" alt="">
                 </div>
             </div>
             <div class="slider-item">

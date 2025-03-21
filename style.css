@@ -228,7 +228,7 @@ header.scrolled a:hover{
 }
 .flex{
     background: rgb(243, 179, 18);
-    max-width: 1500px;
+    max-width: 2000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -347,8 +347,7 @@ header.scrolled a:hover{
 .show-products,
 .order-container{
     background: darkorange;
-    top: -100px;
-    bottom: -100px;
+    
 }
 .show-products .box-container{
     grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));

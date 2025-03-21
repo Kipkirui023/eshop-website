@@ -30,8 +30,8 @@
                 <?php  
                 $total_pendings = 0;
                 $select_pendings = mysqli_query($conn, "SELECT*FROM `order`  WHERE payment_status = 'pending'") or die('Query Failed');
-                while($fetch_pending = mysqli_fetch_assoc($select_pendings)){
-                    $total_pendings == $fetch_pending['total_price'];
+                while($fetch_pendings = mysqli_fetch_assoc($select_pendings)){
+                    $total_pendings == $fetch_pendings['total_price'];
                 }
                 ?>
                 <h3><?php echo $total_pendings; ?>/-</h3>
@@ -41,8 +41,8 @@
                 <?php  
                 $total_completes = 0;
                 $select_completes = mysqli_query($conn, "SELECT*FROM `order` WHERE payment_status = 'pending'") or die('Query Failed');
-                while($fetch_complete = mysqli_fetch_assoc($select_completes)){
-                    $total_completes = $fetch_completes['total_completes'];
+                while($fetch_completes = mysqli_fetch_assoc($select_completes)){
+                    $total_completes = $fetch_completes['total_price'];
                 }
                 ?>
                 <h3><?php echo $total_completes; ?>/-</h3>
