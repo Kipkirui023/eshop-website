@@ -99,6 +99,7 @@
     ?>
     <div class="line2"></div>
     <section class="add-products form-container">
+        <h1>Add Products</h1>
         <form method="POST" action="" enctype="multipart/form-data">
             <div class="input-field">
                 <label>Product Name</label>
@@ -120,7 +121,6 @@
         </form>
     </section>
     <div class="line3"></div>
-    <div class="line4"></div>
     <section class="show-products">
         <div class="box-container">
             <?php
@@ -152,7 +152,6 @@
             ?>
         </div>
     </section>
-    <div class="line"></div>
     <section class="update-container">
         <?php
         if (isset($_GET['edit'])){

@@ -50,7 +50,7 @@
         }
     }
     ?>
-    <div class="line2"></div>
+    <div>line2</div>
     <section class="message-container">
         <h1 class="title">Total User Accounts</h1>
         <div class="box-container">
@@ -64,7 +64,7 @@
                         <p>Name: <span><?php echo $fetch_users['name']; ?></span></p>
                         <p>Email: <span><?php echo $fetch_users['email']; ?></span></p>
                         <p>User Type: <span style="color: <?php if ($fetch_users['user_type'] == 'admin'){echo '#ff0707';}; ?>"><?php echo $fetch_users['user_type']; ?></span></p>
-                        <a href="admin_user.php?delete=<?php echo $fetch_users['id']; ?>;" onclick="return confirm('Delete This Message');">Delete!</a>
+                        <a href="admin_user.php?delete=<?php echo $fetch_users['id']; ?>;" class="delete" onclick="return confirm('Delete This Message');">Delete!</a>
                     </div> 
                     <?php
                        }     

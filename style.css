@@ -1,7 +1,11 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    background: darkorange;
 }
 ul{
     list-style: none;
@@ -93,8 +97,9 @@ input[type=submit]{
 }
 
 /*-----------------form container-----------------*/
+
 .form-container{
-    background: var(--orange);
+    background: darkorange;
     width: 100%;
     min-height: 100vh;
     padding: 4rem 0;
@@ -111,18 +116,18 @@ input[type=submit]{
     top: 0;
     left: -10px;
     width: 255px;
-    height: 650px;
+    height: 100%;
     background-size: 225px;
     background-repeat: no-repeat;
     z-index: 100;
 }
-.form-container::after{
+.form-container{
     content: '';
     position: absolute;
     background:darkorange;
     top: 0;
     left: 0;
-    width: 220px;
+    width: 100%;
     height: 650px;
     background-size: 225px;
     background-repeat: no-repeat;
@@ -131,13 +136,13 @@ input[type=submit]{
 .form-container h1{
     text-transform: uppercase;
     margin: 2rem 0;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 .form-container form{
     width: 60%;
     margin: 1rem auto;
-    background: rgb(255,255,2);
+    background: rgb(231, 219, 205);
     box-shadow: var(--box-shadow);
     padding: 2rem;
     position: relative;
@@ -161,18 +166,19 @@ input[type=submit]{
 }
 /*-----------------banner-------------*/
 .bnner{
-    background: rgb(243, 179, 18);
+    background: darkorange;
     width: 100%;
-    height: 20vh;
+    height: 40vh;
     position: relative;
     z-index: 1;
 }
-/*.bnner::before{
+/*
+.bnner::before{
     position: absolute;
     content: '';
     bottom: -18%;
     right: 0;
-    background:rgb(10, 9, 8);
+    background:rgb(216, 109, 3);
     width: 300px;
     height: 250px;
     background-size: 216px;
@@ -188,11 +194,12 @@ input[type=submit]{
 }
 .bnner .detail h1{
     font-size: 4rem;
-    color: #ff0707;
+    color: #020202;
     text-transform: capitalize;
 }
 .bnner .detail p{
     font-size: 20px;
+    font-weight: 30px;
     line-height: 2;
 }
 .bnner .detail a{
@@ -228,7 +235,6 @@ header.scrolled a:hover{
     position: relative;
     margin: 0 auto;
 }
-
 .navbar a{
     margin: 0 0.5rem;
     font-size: 1rem;
@@ -243,6 +249,7 @@ header.scrolled a:hover{
 }
 .header .icons{
     display: flex;
+    color: #000;
 }
 .header .icons i{
     margin-left: 1.2rem;
@@ -286,12 +293,12 @@ header.scrolled a:hover{
     margin-top: -3.5rem;
     position: relative;
 }
+
 .dashboard::before{
     position: absolute;
     content: '';
     top: -25%;
     left: -10px;
-    background:rgb(10, 9, 8);
     width: 300px;
     height: 250px;
     background-size: 216px;
@@ -323,23 +330,25 @@ header.scrolled a:hover{
 }
 
 /*------------Admin Product Page------------*/
+
 .add-products{
     margin-top: -3.5rem;
     height: auto;
-    background: #160404;
+    background: darkorange;
     position: relative;
 }
 .show-products,
 .message-container,
 .order-container{
     position: relative;
-    background: var(--orange);
+    background: darkorange;
     margin-top: -3.5rem;
 }
-.show-products::before
-.order-container::before{
-    background: grey;
+.show-products,
+.order-container{
+    background: darkorange;
     top: -100px;
+    bottom: -100px;
 }
 .show-products .box-container{
     grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
@@ -354,7 +363,7 @@ header.scrolled a:hover{
 .edit,
 .delete{
     color: black;
-    background: gold;
+    background: rgb(255, 123, 0);
     padding: .5rem 1.5rem;
     text-decoration: none;
     text-transform: capitalize;
@@ -443,7 +452,6 @@ header.scrolled a:hover{
 .order-container .box .delete{
     padding: .7rem 4rem;
 }
-
 /*------------media screen------------*/
 @media (max-width: 990px){
     #menu-btn{
@@ -458,10 +466,10 @@ header.scrolled a:hover{
         border-top: 1px solid black;
         background: transparent;
         transition: .3s ease;
-        /*clip-path: polygon(0 0,100% 0,100% 100%,0 0);*/
+        /* clip-path: polygon(0 0,100% 0,100% 100%,0 0); */
     }
     .header .flex .navbar.active{
-        /*clip-path: polygon(0 0,100% 0,100% 100%,0 100%);*/
+        /* clip-path: polygon(0 0,100% 0,100% 100%,0 100%); */
     }
     .header .flex .navbar a{
         display: block;

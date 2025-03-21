@@ -107,7 +107,7 @@ input[type=submit]{
     position: relative;
     z-index: 1;
 }
-/*.bnner::before{
+.bnner::before{
     position: absolute;
     content: '';
     bottom: -18%;
@@ -117,7 +117,7 @@ input[type=submit]{
     height: 250px;
     background-size: 216px;
     background-repeat: no-repeat;
-} */
+} 
 .bnner .detail{
     margin-top: 4rem;
     position: absolute;
@@ -223,7 +223,7 @@ header.scrolled a:hover{
 .container-fluid{
     position: relative;
     margin: 0;
-    background: #fff;
+    background: darkorange;
     padding: 0;
     width: 100%;
     height: 100%;
@@ -314,7 +314,7 @@ header.scrolled a:hover{
 
 .story{
     padding: 0;
-    background-color: #fff;
+    background-color: darkorange;
 }
 
 .story::before{
@@ -409,7 +409,7 @@ header.scrolled a:hover{
 
 .box-container .box,
 .popular-brands-content .cart{
-    background: #fff;
+    background: darkorange;
     box-shadow: var(--box-shadow);
     padding: 2rem;
     margin: 1rem;
@@ -470,7 +470,7 @@ header.scrolled a:hover{
 
 /*------------footer------------*/
 footer{
-    background: #fff;
+    background: darkorange;
     width: 100%;
     margin-top: -3.5rem;
     position: relative;
@@ -508,7 +508,7 @@ footer .inner-footer .cart h3::after{
     content: '';
     width: 20%;
     height: 6px;
-    background-color: #fff;
+    background-color: darkorange;
     right: 10%;
     bottom: 0;
 } 

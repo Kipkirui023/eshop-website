@@ -35,11 +35,10 @@
     <div class="bnner">
         <div class="detail">
             <h1>Admin Dashboard</h1>
-            <p>welcome to our admin pannel</p>
+            <p>Welcome to our admin pannel</p>
         </div>
 
     </div>
-    <div class="line"></div>
     
 </body>
 </html>

@@ -64,7 +64,7 @@
                         <p>Name: <span><?php echo $fetch_message['name']; ?></span></p>
                         <p>Email: <span><?php echo $fetch_message['email']; ?></span></p>
                         <p><?php echo $fetch_message['message']; ?></p>
-                        <a href="admin_message.php?delete=<?php echo $fetch_message['id']; ?>;" onclick="return confirm('Delete This Message');">Delete!</a>
+                        <a href="admin_message.php?delete=<?php echo $fetch_message['id']; ?>;" class="delete" onclick="return confirm('Delete This Message');">Delete!</a>
                     </div> 
                     <?php
                        }     

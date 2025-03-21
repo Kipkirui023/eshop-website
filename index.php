@@ -37,7 +37,7 @@
     <div class="container-fluid">
         <div class="hero-slider">
             <div class="slider-item">
-                <img src="images/ho1.jpg" alt="">
+                <img src="images/collectin.jpg" alt="">
                 <div class="slider-caption">
                     <span>The Best Qulity Products</span>
                     <p>Enjoy purchase of your best Electronic devices from us<br>
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="slider-item">
-                <img src="images/p1.jpg" alt="">
+                <img src="images/collectio.jpg" alt="">
                 <div class="slider-caption">
                     <span>The Best Qulity Products</span>
                     <p>Enjoy purchase of your best Electronic devices from us<br>
